@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ACCESS｜Sample official website</title>
+  <meta name="description" content="カフェ「KISSA」のアクセスマップと予約フォームが掲載されたページです。">
+  <meta name="viewport" content="width=device-width">
+  <link href="./css/common2.css" rel="stylesheet">
+  <link href="./css/access2.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" crossorigin="anonymous"></script>
+  <script src="./js/toggle-menu.js"></script>
+</head>
+
+<body>
+
+  <!-- headerここから -->
+  <header class="header">
+    <div class="header-inner">
+      <a class="header-logo" href="./index.html">
+        <img src="./images/common/logo-header3.png" alt="KISSA">
+      </a>
+      <button class="toggle-menu-button"></button>
+      <div class="header-site-menu">
+        <nav class="site-menu">
+          <ul>
+            <li><a href="./concept2.html">CONCEPT</a></li>
+            <li><a href="./menu2.html">MENU</a></li>
+            <li><a href="./shop2.html">RESERVATION</a></li>
+            <li><a href="./access2.html">ACCESS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- headerここまで -->
+
+  <!-- mainここから -->
+  <main class="main">
+    <div class="title">
+      <h1>ACCESS</h1>
+      <p>アクセス・お問い合わせ</p>
+    </div>
+    <div class="map">
+      <h2>アクセスマップ</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.3936550277863!2d138.3161019!3d35.8638688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c6987d64042f7%3A0xf6a5d71dff896602!2z5bCP5re15rKi6aeF!5e0!3m2!1sja!2sjp!4v1634704228582!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="contact">
+      <h2>予約フォーム</h2>
+      <!-- Form -->
+      <form id="form" action="#">
+        <div id="reservation">
+          <dl class="form-area tabs">
+            <!-- Column1 -->
+            <dt><span class="required">お名前</span></dt>
+            <dd><input class="input-text" type="text" name="name" required></dd>
+            <!-- Column2 -->
+            <dt><span class="required">メールアドレス</span></dt>
+            <dd><input class="input-text" type="email" name="email" required></dd>
+            <!-- Column3 -->
+            <dt>お電話番号</dt>
+            <dd><input class="input-text" type="tel" name="tel"></dd>
+            <!-- Column4 -->
+            <dt>コーヒー</dt>
+            <dd>
+              <select class="select-box" name="genre">
+                <option value="None" selected>-----</option>
+                <option value="コーヒー（モカ）アイス">コーヒー（モカ）アイス</option>
+                <option value="コーヒー（モカ）ホット">コーヒー（モカ）ホット</option>
+                <option value="コーヒー（ブレンド）アイス">コーヒー（ブレンド）アイス</option>
+                <option value="コーヒー（ブレンド）ホット">コーヒー（ブレンド）ホット</option>
+                <option value="コーヒー（キリマンジャロ）">コーヒー（キリマンジャロ）</option>
+              </select>
+            </dd>
+            <!-- Column5 -->
+            <dt>紅茶</dt>
+            <dd>
+              <select class="select-box" name="genre">
+                <option value="None" selected>-----</option>
+                <option value="アイスティー">アイスティー</option>
+                <option value="レモンティー">レモンティー</option>
+              </select>
+            </dd>
+            <!-- Column6 -->
+            <dt>食べ物</dt>
+            <dd>
+              <select class="select-box" name="genre">
+                <option value="None" selected>-----</option>
+                <option value="食べ物１">食べ物１</option>
+                <option value="食べ物２">食べ物２</option>
+              </select>
+            </dd>
+            <dt><span class="required">来訪予定</span></dt>
+            <dd><input class="input-text" name="message" required placeholder="来訪する日程時間を入れてください。"/></dd>
+          </dl>
+        </div>
+        <p class="confirm-text">ご入力内容をご確認の上、お間違いがなければ［Submit］ボタンを押してください。</p>
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+  <!-- mainここまで -->
+
+  <!-- footerここから -->
+  <footer class="footer">
+      <nav class="site-menu">
+        <ul>
+          <li><a href="./concept2.html">CONCEPT</a></li>
+          <li><a href="./menu2.html">MENU</a></li>
+          <li><a href="./shop2.html">RESERVATION</a></li>
+          <li><a href="./access2.html">ACCESS</a></li>
+        </ul>
+      </nav>
+      <p class="footer-tel">TEL 01-2345-6789</p>
+      <p class="footer-time">OPEN Fri-Sun 11:00-16:00</p>
+      <p class="copyright"><small>&copy;Sample</small></p>
+  </footer>
+  <!-- footerここまで -->
+
+</body>
+
+</html>
